@@ -8,6 +8,10 @@
     "start": "ng serve",
     "test": "ng test",
     "build": "ng build --prod",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:ssr": "node dist/server",
+    "build:client-and-server-bundles": "ng build --prod && ng run angular.io-example:server",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "e2e": "ng e2e",
     "ng": "ng"
   },
