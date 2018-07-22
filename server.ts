@@ -1,5 +1,3 @@
-// This sample server is not secure! Be sure to add middleware to authenticate and authorize users just as you would for a normal Angular application server.
-
 // These are important and needed before anything else
 import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
@@ -15,7 +13,7 @@ enableProdMode();
 // Express server
 const app = express();
 
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8081;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack

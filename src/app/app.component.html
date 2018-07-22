@@ -3,5 +3,10 @@
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
 </nav>
+<ul>
+  <li *ngFor="let msg of socketData">
+    {{ msg }}
+  </li>
+</ul>
 <router-outlet></router-outlet>
 <app-messages></app-messages>

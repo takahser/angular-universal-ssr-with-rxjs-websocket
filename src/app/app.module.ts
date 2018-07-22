@@ -14,7 +14,8 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
-import {isPlatformBrowser} from '../../node_modules/@angular/common';
+import {isPlatformBrowser} from '@angular/common';
+import {MessagingService} from './messaging.service';
 
 @NgModule({
   imports: [
@@ -37,6 +38,9 @@ import {isPlatformBrowser} from '../../node_modules/@angular/common';
     HeroDetailComponent,
     MessagesComponent,
     HeroSearchComponent
+  ],
+  providers: [
+    MessagingService
   ],
   bootstrap: [ AppComponent ]
 })
