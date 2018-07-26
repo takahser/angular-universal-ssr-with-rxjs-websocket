@@ -54,7 +54,7 @@
     "ngx-kjua": "^1.1.1",
     "ngx-masonry": "^1.1.2",
     "ngx-quill": "^3.1.0",
-    "rxjs": "6.2.2",
+    "rxjs": "takahser/rxjs#00d144092d421d00080a7b44c3672af2b4f3733d",
     "rxjs-compat": "6.2.2",
     "ts-loader": "^4.4.2",
     "zone.js": "^0.8.24",

@@ -1,3 +1,0 @@
-
-  export * from './static/static';
-  
