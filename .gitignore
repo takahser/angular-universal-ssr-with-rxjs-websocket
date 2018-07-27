@@ -1,6 +1,7 @@
 .DS_STORE
 
-/dist/
+/dist/*
+!/dist/server.js
 bazel-*
 e2e_test.*
 node_modules
