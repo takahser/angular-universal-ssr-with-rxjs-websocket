@@ -6,9 +6,11 @@
   "scripts": {
     "postinstall": "npm run build:ssr",
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "start": "ng serve",
+    "start": "node dist/server",
+    "start:ng": "ng serve",
     "test": "ng test",
-    "build": "ng build --prod",
+    "build:prod": "ng build --prod",
+    "build": "GENERATE_SOURCEMAP=false npm run build:client-and-server-bundles && npm run webpack:server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server",
     "build:client-and-server-bundles": "ng build --prod && ng run angular.io-example:server",
